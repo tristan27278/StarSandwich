@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .p {
+            height: auto;
+            width: 100%;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            flex-wrap: wrap; 
+            gap: 40px; 
+        }
+       
+        .b {
+            height: 350px;
+            width: 270px;
+            border: 2px solid slategrey;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column; 
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 10px;
+        }
+        .b1, .b2, .b3, .b4, .b5 {
+            background-color: white;
+        }
+        .img1 {
+            max-width: 70%; 
+            max-height: 90%; 
+            border-radius: 15px;
+        }
+        .n {
+            margin-top: 10px;
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px;
+            background-color: darkgrey;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100px;
+            border: 2px solid slategrey;
+            border-radius: 10px;
+        }
+        button:hover {
+            color: lightblue;
+        }
+        .b:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+        }
+        .f{
+            margin-top: 10px;
+            display: flexbox;
+            justify-content: center;
+            gap: 10px;
+            text-align: center;
+            
+        }
+        .bicon {
+            margin-right: 5px;
+            height: 35px;
+            width: 35px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .icon {
+            width: 100%;
+            height: 100%;
+        }
+         .x{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            color: aliceblue;
+        }
+         .x1 {
+            background-color: maroon;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+         }
+         .x2{
+             background-color: maroon;
+             margin-top: 10px;
+         }
+         p, a{
+             margin: 5px;
+         }
+         h2{
+             margin-top: 0px;
+         }
+        .logo {
+            width: 30px;
+            border-radius: 50px;
+            margin-left: 6px;
+            margin-top: 2px;
+          }
+    </style>
+</head>
+<body>
+    <div class="p">
+       
+        <div class="x x1">  
+              <h2>STAR SANDWICH</h2>
+               <div class="logo"><img src="https://i.imgur.com/pR8NV2k_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" class="logo"></div>
+        </div>
+        
+        <div class="b b1">
+            <img src="https://i.imgur.com/CuDldEt_d.png?maxwidth=520&shape=thumb&fidelity=high" class="img1">
+            <h3 class="n">SANDWICH ANGGUR</h3>
+            <p>Rp 7.500</p>
+            <a href="https://wa.me/6285691801623?text=sandwich%20sando%20varian%20anggur"><button>BUY</button></a>
+        </div>
+        
+        <div class="b b2">
+            <img src="https://i.imgur.com/CuO8eo8_d.png?maxwidth=520&shape=thumb&fidelity=high" class="img1">
+            <h3 class="n">SANDWICH STRAWBERRY</h3>
+            <p>Rp 7.500</p>
+            <a href="https://wa.me/6285691801623?text=sandwich%20sando%20varian%20strawberry"><button>BUY</button></a>
+        </div>
+        
+        <div class="b b3">
+            <img src="https://i.imgur.com/xVCmHKY_d.png?maxwidth=520&shape=thumb&fidelity=high" class="img1">
+            <h3 class="n">SANDWICH KIWI</h3>
+            <p>Rp 7.500</p>
+           <a href="https://wa.me/6285691801623?text=sandwich%20sando%20varian%20kiwi"><button>BUY</button></a>
+        </div>
+        
+        <div class="b b4">
+            <img src="https://i.imgur.com/EFneqKI_d.png?maxwidth=520&shape=thumb&fidelity=high" class="img1">
+            <h3 class="n">MIX SANDWICH</h3>
+            <p>Rp 8.000</p>
+             <a href="https://wa.me/6285691801623?text=sandwich%20sando%20varian%20mix"><button>BUY</button></a>
+        </div>
+    </div>
+    <div class="f">    
+        <h4>CONTACT US</h4>
+         <a href="https://api.whatsapp.com/send/?phone=%2B6285691801623&text&type=phone_number&app_absent=0" ><button class="bicon"><img src="https://cdn1.iconfinder.com/data/icons/apps-8/64/whatsapp-wa-apps-platform-512.png" class="icon"></button></a>
+             <a href="https://www.instagram.com/tristan.2277/#" ><button class="bicon"><img src="https://cdn1.iconfinder.com/data/icons/apps-8/64/instagram-ig-apps-platform-128.png" class="icon"></button></a>
+    </div>
+    <div class="x x2"></div>
+    
+</body>
+</html>    
