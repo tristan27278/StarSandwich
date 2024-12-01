@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Title</title>
+    <link rel="icon" href="https://github.com/tristan27278/StarSandwich/blob/main/resized_logo_32x32.png" type="image/x-icon">
     <style>
         body {
             background-color: aliceblue;
@@ -16,9 +17,9 @@
             height: auto;
             width: 100%;
             display: flex;
-            justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+            flex-direction: column;
             gap: 40px;
         }
         .b {
@@ -30,6 +31,7 @@
             flex-direction: column;
             align-items: center;
             padding-top: 10px;
+            margin-top: 30px;
         }
         .b1, .b2, .b3, .b4, .b5 {
             background-color: white;
@@ -84,8 +86,6 @@
             height: 100%;
         }
         .x {
-            margin: 0;
-            padding: 0;
             width: 100%;
             height: 50px;
             text-align: center;
@@ -96,7 +96,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
+            position: fixed;
+            z-index: 1000;
         }
         .x2 {
             background-color: maroon;
@@ -118,6 +119,27 @@
             text-align: center;
             margin-top: 20px;
         }
+        .menu{
+            width: 90%;
+            height: 40px;
+            background-color: maroon;
+            color: white;
+            display:flex;  
+            justify-content: space-between;
+            align-items: center; 
+            margin-top: 55px;
+            border-radius: 15px;
+        }
+        .menu h4{
+            margin: 8px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+        }
+         html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body>
@@ -126,8 +148,12 @@
             <h2>STAR SANDWICH</h2>
             <div class="logo"><img src="https://i.imgur.com/pR8NV2k_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" class="logo"></div>
         </div>
-        
-        <div class="b b1">
+       <div class="menu">
+    <a href="#menu"><h4>MENU</h4></a>
+    <a href="#contact"><h4>CONTACT US</h4></a>
+    <a href="#address"><h4>ADDRESS</h4></a>
+</div>
+        <div class="b b1" id="menu">
             <img src="https://i.imgur.com/CuDldEt_d.png?maxwidth=520&shape=thumb&fidelity=high" class="img1">
             <h3 class="n">SANDWICH ANGGUR</h3>
             <p>Rp 8.000</p>
@@ -155,7 +181,7 @@
             <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20mix"><button>BUY</button></a>
         </div>
     </div>
-    <div class="f">    
+    <div class="f" id="contact">    
         <h4>CONTACT US</h4>
         <a href="https://api.whatsapp.com/send/?phone=%2B6285691801623&text&type=phone_number&app_absent=0" ><button class="bicon"><img src="https://cdn1.iconfinder.com/data/icons/apps-8/64/whatsapp-wa-apps-platform-512.png" class="icon"></button></a>
         <a href="" ><button class="bicon"><img src="https://cdn1.iconfinder.com/data/icons/apps-8/64/instagram-ig-apps-platform-128.png" class="icon"></button></a>
@@ -167,11 +193,11 @@
 </a>
     
     </div>
-    <div class="alamat">
+    <div class="alamat" id="address">
         <h4>ADDRESS</h4>
         <h6>Dekat Toko Gorden Tati Jaya, deket Klinik Aqma sebrang toko playstation, Jl. Raya Cikampek-Parakan, Cikampek Kota, Kec. Cikampek, Karawang, Jawa Barat 41373</h6>
     </div>
   
     <div class="x x2"></div>
 </body>
-    </html>
+</html>
