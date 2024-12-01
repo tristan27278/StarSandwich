@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAQ - Mobile Friendly</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: 'Poppins', 'sans-serif';
+                box-sizing: border-box;
+            }
+            body {
+                background: #e3edf7;
+            }
+            .faq {
+                margin: 20px auto;
+                width: 90%;
+                max-width: 600px;
+            }
+            .faq li {
+                list-style: none;
+                width: 100%;
+                margin: 15px 0;
+                padding: 10px;
+                border-radius: 8px;
+                background: #e3edf7;
+                box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), 
+                            -6px -6px 10px -1px rgba(225, 225, 225, 0.7);
+            }
+            .faq li label {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            label:before {
+                content: '+';
+                margin-right: 10px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            input[type="radio"] {
+                display: none;
+            }
+            .faq .content {
+                color: #555;
+                padding: 0 10px;
+                line-height: 22px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s, padding 0.5s;
+            }
+            .faq .content p {
+                word-wrap: break-word;
+                margin: 10px 0;
+            }
+            .faq input[type="radio"]:checked + label + .content {
+                max-height: 300px;
+                padding: 10px;
+            }
+            .faq input[type="radio"]:checked + label:before {
+                content: '-';
+            }
+            h2 {
+                margin: 20px;
+                font-size: 18px;
+                text-align: center;
+            }
+            @media (max-width: 600px) {
+                h2 {
+                    font-size: 16px;
+                }
+                .faq li label {
+                    font-size: 14px;
+                }
+                .faq .content p {
+                    font-size: 14px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Frequently Asked Questions</h2>
+        <ul class="faq">
+            <li>
+                <input type="radio" name="faq" id="info1">
+                <label for="info1">apakah krim didalamnya manis?</label>
+                <div class="content">
+                    <p>krim yang kami gunakan adalah krim kocok segar dengan sedikit gula untuk menonjolkan rasa alami buah-buahan.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="faq" id="info2">
+                <label for="info2">apakah tersedia pengiriman ke rumah?</label>
+                <div class="content">
+                    <p>ya, kami menyediakan layanan pengiriman dengan kemasan khusus untuk menjaga kesegaran sandwich buah Anda.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="faq" id="info3">
+                <label for="info3">apakah bisa request buahnya?</label>
+                <div class="content">
+                    <p>ya, Anda dapat memilih kombinasi buah favorit Anda dari pilihan yang tersedia.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="faq" id="info4">
+                <label for="info4">berapa lama sandwich buah ini bisa disimpan?</label>
+                <div class="content">
+                    <p>karena menggunakan bahan segar, sandwich buah sebaiknya dikonsumsi dalam waktu 24 jam dan disimpan di lemari pendingin.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="faq" id="info5">
+                <label for="info5">apa saja jenis buah yang digunakan dalam sandwich buah ini?</label>
+                <div class="content">
+                    <p>kami menggunakan buah-buahan segar seperti stroberi, kiwi, mangga, anggur, dan lainnya sesuai musim.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="faq" id="info6">
+                <label for="info6">apakah sandwich buah ini mengandung bahan pengawet?</label>
+                <div class="content">
+                    <p>tidak, kami hanya menggunakan bahan segar tanpa tambahan pengawet.</p>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>
