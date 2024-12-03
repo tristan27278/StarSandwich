@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Title</title>
-    <link rel="icon" href="https://github.com/tristan27278/StarSandwich/blob/main/resized_logo_32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=info"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=help" />
+    <link rel="icon" href="favicon
+    ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_warm_up" />
     <style>
         body {
             background-color: aliceblue;
@@ -165,10 +165,13 @@
     position: relative;
 }
 
-.menu-item {
+    .menu-item {
     position: relative;
 }
-
+      a{
+        decoration:none;
+        color:white;
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -195,6 +198,25 @@
 
 .menu-item:hover .dropdown-content {
     display: block;
+}
+.x2 .up {
+    position: fixed;
+    width:20px;
+    height: 20px;
+    bottom: 20px;
+    right: 0px;
+    background-color: maroon;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.x2 .up .material-symbols-outlined {
+    font-size: 19px;
 }
     </style>
 </head>
@@ -263,12 +285,10 @@
         <h6>Dekat Toko Gorden Tati Jaya, deket Klinik Aqma sebrang toko playstation, Jl. Raya Cikampek-Parakan, Cikampek Kota, Kec. Cikampek, Karawang, Jawa Barat 41373</h6>
     </div>
     <div class="x x2">
-          <div class="faq" id="faq">
-        <a href="#" class="if"><span class="material-symbols-outlined">
-info</span></a>
-        <a href="#" class="if"><span class="material-symbols-outlined">
-help</span></a>
+    <a href="#" class="up"><span class="material-symbols-outlined">
+arrow_warm_up
+</span></a>
 </div>
-    </div>
+        </div>
 </body>
 </html>
