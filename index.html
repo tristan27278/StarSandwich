@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STAR SANDWICH</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Page Title</title>
+    <link rel="icon" href="https://github.com/tristan27278/StarSandwich/blob/main/resized_logo_32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=info"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=help" />
     <style>
@@ -143,7 +143,7 @@
             scroll-behavior: smooth;
         }
         .if .material-symbols-outlined {
-    font-size: 35px;
+    font-size: 30px;
     color: black;
 }
         .faq{
@@ -152,9 +152,50 @@
         }
         .faq a{
             text-decoration: none;
-            color: black;
+            color: aliceblue;
         }
+        .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: maroon;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+}
 
+.menu-item {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgray;
+}
+
+.menu-item:hover .dropdown-content {
+    display: block;
+}
     </style>
 </head>
 <body>
@@ -164,32 +205,41 @@
             <div class="logo"><img src="https://i.imgur.com/pR8NV2k_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" class="logo"></div>
         </div>
        <div class="menu">
-    <a href="#menu"><h4>MENU</h4></a>
-    <a href="#contact"><h4>CONTACT US</h4></a>
+    <div class="menu-item">
+        <h4>MENU</h4>
+        <div class="dropdown-content">
+            <a href="#v1">varian anggur</a>
+            <a href="#v2">varian strawberry</a>
+            <a href="#v3">varian pisang</a>
+            <a href="#v4">mix varian</a>
+        </div>
+    </div>
+    <a href="#contact"><h4>CONTACT</h4></a>
     <a href="#address"><h4>ADDRESS</h4></a>
+    <a href="faq.html"><h4>FAQ</h4></a>
 </div>
-        <div class="b b1" id="menu">
+        <div class="b b1" id="v1">
             <img src="https://i.imgur.com/CuDldEt_d.png?maxwidth=520&shape=thumb&fidelity=high" class="img1">
             <h3 class="n">SANDWICH ANGGUR</h3>
             <p>Rp 8.000</p>
             <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20anggur"><button>BUY</button></a>
         </div>
         
-        <div class="b b2">
+        <div class="b b2" id="v2">
             <img src="https://i.imgur.com/CuO8eo8_d.png?maxwidth=520&shape=thumb&fidelity=high" class="img1">
             <h3 class="n">SANDWICH STRAWBERRY</h3>
             <p>Rp 8.000</p>
             <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20strawberry"><button>BUY</button></a>
         </div>
         
-        <div class="b b3">
+        <div class="b b3" id="v3">
             <img src="https://i.imgur.com/krbg0Du.jpeg" class="img1">
             <h3 class="n">SANDWICH PISANG</h3>
             <p>Rp 8.000</p>
             <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20pisang"><button>BUY</button></a>
         </div>
         
-        <div class="b b4">
+        <div class="b b4" id="v4">
             <img src="https://i.imgur.com/0KL6xze.png" class="img1">
             <h3 class="n">MIX SANDWICH</h3>
             <p>Rp 8.000</p>
@@ -212,14 +262,13 @@
         <h4>ADDRESS</h4>
         <h6>Dekat Toko Gorden Tati Jaya, deket Klinik Aqma sebrang toko playstation, Jl. Raya Cikampek-Parakan, Cikampek Kota, Kec. Cikampek, Karawang, Jawa Barat 41373</h6>
     </div>
-  
     <div class="x x2">
-         <div class="faq">
+          <div class="faq" id="faq">
         <a href="#" class="if"><span class="material-symbols-outlined">
-info</span> </a>
-        <a href="faq.html" class="if"><span class="material-symbols-outlined">
-help</span> </a>
+info</span></a>
+        <a href="#" class="if"><span class="material-symbols-outlined">
+help</span></a>
 </div>
     </div>
 </body>
-                </html>
+</html>
