@@ -1,294 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STAR SANDWICH</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_warm_up" />
-    <style>
-        body {
-            background-color: aliceblue;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        .p {
-            height: auto;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            flex-direction: column;
-            gap: 40px;
-        }
-        .b {
-            height: 350px;
-            width: 270px;
-            border: 2px solid slategrey;
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 10px;
-            margin-top: 30px;
-        }
-        .b1, .b2, .b3, .b4, .b5 {
-            background-color: white;
-        }
-        .img1 {
-            max-width: 70%;
-            max-height: 90%;
-            border-radius: 15px;
-            border: 2px solid slategray;
-        }
-        .n {
-            margin-top: 10px;
-            text-align: center;
-            margin: 20px;
-        }
-        button {
-            margin-top: 10px;
-            padding: 5px;
-            background-color: darkgrey;
-            color: black;
-            border: none;
-            cursor: pointer;
-            font-size: 14px;
-            width: 100px;
-            border: 2px solid slategrey;
-            border-radius: 10px;
-        }
-        button:hover {
-            color: lightblue;
-        }
-        .b:hover {
-            transform: translateY(-10px);
-            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
-        }
-        .f {
-            margin-top: 10px;
-            display: flexbox;
-            justify-content: center;
-            gap: 10px;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .bicon {
-            margin-right: 5px;
-            height: 40px;
-            width: 40px;
-            border: 2px solid black;
-            border-radius: 50%;
-            background-color: white;
-        }
-        .icon {
-            width: 100%;
-            height: 100%;
-        }
-        .x {
-            width: 100%;
-            height: 50px;
-            text-align: center;
-            color: aliceblue;
-        }
-        .x1 {
-            background-color: maroon;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: fixed;
-            z-index: 1000;
-        }
-        .x2 {
-            background-color: maroon;
-            margin-top: 10px;
-        }
-        p, a {
-            margin: 5px;
-        }
-        h2 {
-            margin-top: 0px;
-        }
-        .logo {
-            width: 30px;
-            border-radius: 50px;
-            margin-left: 6px;
-            margin-top: 2px;
-        }
-        .alamat {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .menu{
-            width: 90%;
-            height: 40px;
-            background-color: maroon;
-            color: white;
-            display:flex;  
-            justify-content: space-between;
-            align-items: center; 
-            margin-top: 55px;
-            border-radius: 15px;
-        }
-        .menu h4{
-            margin: 8px;
-        }
-        .menu a {
-            text-decoration: none;
-            color: white;
-        }
-         html {
-            scroll-behavior: smooth;
-        }
-        .if .material-symbols-outlined {
-    font-size: 30px;
-    color: black;
-}
-        .faq{
-            display: flex;
-            justify-content: space-between;
-        }
-        .faq a{
-            text-decoration: none;
-            color: aliceblue;
-        }
-        .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: maroon;
-    color: white;
-    padding: 10px;
-    border-radius: 15px;
-    position: relative;
-}
-
-    .menu-item {
-    position: relative;
-}
-      a{
-        decoration:none;
-        color:white;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: maroon;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 10px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    margin: 5px 0;
-}
-
-.dropdown-content a:hover {
-    background-color: lightgray;
-}
-
-.menu-item:hover .dropdown-content {
-    display: block;
-}
-.x2 .up {
-    position: fixed;
-    width:20px;
-    height: 20px;
-    bottom: 20px;
-    right: 0px;
-    background-color: maroon;
-    padding: 10px;
-    border-radius: 50%;
-    color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.x2 .up .material-symbols-outlined {
-    font-size: 19px;
-}
-    </style>
-</head>
-<body>
-    <div class="p">
-        <div class="x x1">  
-            <h2>STAR SANDWICH</h2>
-            <div class="logo"><img src="https://i.imgur.com/pR8NV2k_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" class="logo"></div>
+<html>
+    <head>
+        <title>STAR SANDWICH</title>
+         <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet">
+        <style>
+            body{
+                background: aliceblue;
+            }
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            .h{
+                display:flex;
+                margin: 10px 10px;
+            }
+            .h h3{
+                margin-left: 10px;
+            }
+            .c{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+            }
+            .dc{
+                width: 90%;
+                height: 300px;
+                background: #E6F7FF;
+                border-radius: 12px;
+                border: 2px solid lightblue;
+            }
+            .info{
+                width: 14%;
+                background: #0db4d5;
+                border-radius: 5px;
+                margin: 20px 20px;
+                display:flex;
+                justify-content:center;
+            }
+            .info2{
+                text-align:center;
+                margin: 20px;
+                margin-top: 50px;
+            }
+            .f{
+                display: flex;
+                justify-content:space-around;
+                
+            }
+            .tl, .tr{
+                color: white;
+                border:none;
+                font-size: 14px;
+                margin-top: 180px;
+                
+            }
+            .tr{
+                background:#3d8ef9;
+                width: 190px;
+                height: 30px;
+                display:flex;
+                align-items:center;
+            }
+            .tl{
+                background:#7c7f80;
+                width: 100px;
+                height: 30px;
+            }
+            .material-symbols-outlined{
+                margin-right: 10px;
+                margin-left: 5px;
+            }
+            a{
+                text-decoration: none;
+            }
+            .dc h3{
+                line-height: 2.1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="h">
+            <span class="material-symbols-outlined">campaign</span>
+            <h3>INFORMASI</h3>
         </div>
-       <div class="menu">
-    <div class="menu-item">
-        <h4>MENU</h4>
-        <div class="dropdown-content">
-            <a href="#v1">varian anggur</a>
-            <a href="#v2">varian strawberry</a>
-            <a href="#v3">varian pisang</a>
-            <a href="#v4">mix varian</a>
+        <div class="c">
+            <div class="dc">
+                <h4 class="info">INFO</h4>
+                <h3 class="info2">KLIK PADA SALAH SATU PRODUCT YG DIINGINKAN UNTUK MENAMPILKAN TOMBOL BELI!</h3>
+                <div class="f">
+                    <a href="starsandwich.html" class="l"><button class="tl"><h5>TUTUP</h5></button></a>
+                    <a href="starsandwich.html" class="r"><button class="tr"><span class="material-symbols-outlined">
+thumb_up
+</span><h5>SAYA SUDAH MEMBACA</h5></button></a>
+                </div>
+            </div>
         </div>
-    </div>
-    <a href="#contact"><h4>CONTACT</h4></a>
-    <a href="#address"><h4>ADDRESS</h4></a>
-    <a href="faq.html"><h4>FAQ</h4></a>
-</div>
-        <div class="b b1" id="v1">
-            <img src="https://i.imgur.com/CuDldEt_d.png?maxwidth=520&shape=thumb&fidelity=high" class="img1">
-            <h3 class="n">SANDWICH ANGGUR</h3>
-            <p>Rp 8.000</p>
-            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20anggur"><button>BUY</button></a>
-        </div>
-        
-        <div class="b b2" id="v2">
-            <img src="https://i.imgur.com/CuO8eo8_d.png?maxwidth=520&shape=thumb&fidelity=high" class="img1">
-            <h3 class="n">SANDWICH STRAWBERRY</h3>
-            <p>Rp 8.000</p>
-            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20strawberry"><button>BUY</button></a>
-        </div>
-        
-        <div class="b b3" id="v3">
-            <img src="https://i.imgur.com/krbg0Du.jpeg" class="img1">
-            <h3 class="n">SANDWICH PISANG</h3>
-            <p>Rp 8.000</p>
-            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20pisang"><button>BUY</button></a>
-        </div>
-        
-        <div class="b b4" id="v4">
-            <img src="https://i.imgur.com/0KL6xze.png" class="img1">
-            <h3 class="n">MIX SANDWICH</h3>
-            <p>Rp 8.000</p>
-            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20mix"><button>BUY</button></a>
-        </div>
-    </div>
-    <div class="f" id="contact">    
-        <h4>CONTACT US</h4>
-        <a href="https://api.whatsapp.com/send/?phone=%2B6285691801623&text&type=phone_number&app_absent=0" ><button class="bicon"><img src="https://cdn1.iconfinder.com/data/icons/apps-8/64/whatsapp-wa-apps-platform-512.png" class="icon"></button></a>
-        <a href="" ><button class="bicon"><img src="https://cdn1.iconfinder.com/data/icons/apps-8/64/instagram-ig-apps-platform-128.png" class="icon"></button></a>
-        <a href="" ><button class="bicon"><img src="https://cdn0.iconfinder.com/data/icons/social-media-and-logos-11/32/Gmail_envelope_letter_email_Gmail_envelope_letter_email-128.png" class="icon"></button></a>
-      <a href="https://maps.app.goo.gl/826VmNZYtxRTP6Ui9" target="_blank">
-    <button class="bicon">
-        <img src="https://cdn1.iconfinder.com/data/icons/twitter-ui-colored/48/JD-22-128.png" class="icon">
-    </button>
-</a>
-    
-    </div>
-    <div class="alamat" id="address">
-        <h4>ADDRESS</h4>
-        <h6>Dekat Toko Gorden Tati Jaya, deket Klinik Aqma sebrang toko playstation, Jl. Raya Cikampek-Parakan, Cikampek Kota, Kec. Cikampek, Karawang, Jawa Barat 41373</h6>
-    </div>
-    <div class="x x2">
-    <a href="#" class="up"><span class="material-symbols-outlined">
-arrow_warm_up
-</span></a>
-</div>
-        </div>
-</body>
+    </body>
 </html>
