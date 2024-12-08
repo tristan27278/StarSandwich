@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAR SANDWICH</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet">
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .p {
+            height: auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .b {
+            height: auto;
+            width: 270px;
+            border: 2px solid slategrey;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10px;
+            margin-top: 30px;
+        }
+        .b1, .b2, .b3, .b4, .b5 {
+            background-color: white;
+        }
+        .img1 {
+            max-width: 95%;
+            max-height: 95%;
+            
+        }
+        .bimg{
+            width: 70%;
+            border: 2px solid slategray;
+            border-radius: 15px;
+        }
+        .b:hover .img1 {
+          transform: translate(-1.5rem, -9.5rem) rotate(-10deg);
+        }
+        .img1{
+          transition: 0.5s;
+          filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.8));
+        }
+
+        .b:hover .img1 {
+          transform: translate(-1.5rem, -3.5rem) rotate(-20deg);
+        }
+        .b:hover .btn {
+          transition-delay: 0.2s;
+          opacity: 1;
+        }
+        .n {
+            margin-top: 10px;
+            text-align: center;
+            margin: 20px;
+        }
+        .btn {
+            margin-top: 10px;
+            padding: 5px;
+            background-color: darkgrey;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100px;
+            border: 2px solid slategrey;
+            border-radius: 10px;
+            transition: 0.2s;
+            opacity: 0;
+            display:flex;
+            justify-content: center;
+        }
+        button:hover {
+            color: lightblue;
+        }
+        .b:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+        }
+        .f {
+            display: flexbox;
+            justify-content: center;
+            gap: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .bicon {
+            margin-right: 5px;
+            height: 35px;
+            width: 35px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: white;
+            display:flexbox;
+            align-items:center;
+            justify-content: center;
+            margin-top: 10px; 
+        }
+        .icon {
+            width: 78%;
+            height: 78%;
+            margin-top:2px;
+            
+        }
+        .x {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            color: aliceblue;
+        }
+        .x1 {
+            background-color: maroon;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+        }
+        .x2 {
+            background-color: maroon;
+            margin-top: 10px;
+        }
+        p, a {
+            margin: 5px;
+        }
+        h2 {
+            margin-top: 0px;
+        }
+        .logo {
+            width: 30px;
+            border-radius: 50px;
+            position: absolute;
+            left: 2px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .alamat {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .menu{
+            width: 90%;
+            height: 40px;
+            background-color: maroon;
+            color: white;
+            display:flex;  
+            justify-content: space-between;
+            align-items: center; 
+            margin-top: 55px;
+            border-radius: 15px;
+        }
+        .menu h4{
+            margin: 8px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+        }
+         html {
+            scroll-behavior: smooth;
+        }
+        .if .material-symbols-outlined {
+            font-size: 30px;
+            color: black;
+        }
+        .faq{
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: maroon;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .menu-item {
+            position: relative;
+        }
+         a{
+            text-decoration:none;
+            color:white;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: maroon;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+
+        .dropdown-content a:hover {
+            background-color: lightgray;
+        }
+
+        .menu-item:hover .dropdown-content {
+            display: block;
+        }
+        .x2 .up {
+            position: fixed;
+            width:20px;
+            height: 20px;
+            bottom: 20px;
+            right: 0px;
+            background-color: maroon;
+            padding: 10px;
+            border-radius: 50%;
+            color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .x2 .up .material-symbols-outlined {
+            font-size: 19px;
+}
+    </style>
+</head>
+<body>
+    <div class="p">
+        <div class="x x1">  
+            <h2>STAR SANDWICH</h2>
+            <div class="logo"><img src="https://i.imgur.com/pR8NV2k_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" class="logo"></div>
+        </div>
+       <div class="menu">
+    <div class="menu-item">
+        <h4>MENU</h4>
+        <div class="dropdown-content">
+            <a href="#v1">varian anggur</a>
+            <a href="#v2">varian strawberry</a>
+            <a href="#v3">varian pisang</a>
+            <a href="#v4">varian mix</a>
+        </div>
+    </div>
+    <a href="#contact"><h4>CONTACT</h4></a>
+    <a href="#address"><h4>ADDRESS</h4></a>
+    <a href="faq.html"><h4>FAQ</h4></a>
+</div>
+        <div class="b b1" id="v1">
+           <div class="bimg"><img src="https://i.imgur.com/SLaztj3.png" class="img1"></div>
+            <h3 class="n">SANDWICH ANGGUR</h3>
+            <p>Rp 8.000</p>
+            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20anggur" class="btn">BUY</a>
+        </div>
+        
+        <div class="b b2" id="v2">
+          <div class="bimg"><img src="https://i.imgur.com/87cpA3V.png" class="img1"></div>
+            <h3 class="n">SANDWICH STRAWBERRY</h3>
+            <p>Rp 8.000</p>
+            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20strawberry" class="btn">BUY</a>
+        </div>
+        
+        <div class="b b3" id="v3">
+           <div class="bimg"> <img src="https://i.imgur.com/WkQDORL.png" class="img1"></div>
+            <h3 class="n">SANDWICH PISANG</h3>
+            <p>Rp 8.000</p>
+            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20pisang" class="btn">BUY</a>
+        </div>
+        
+        <div class="b b4" id="v4">
+           <div class="bimg"> <img src="https://i.imgur.com/0KL6xze.png" class="img1"></div>
+            <h3 class="n">MIX SANDWICH</h3>
+            <p>Rp 8.000</p>
+            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20mix" class="btn">BUY</a>
+        </div>
+    </div>
+    <div class="f" id="contact">    
+        <h4>CONTACT US</h4>
+        <a href="https://api.whatsapp.com/send/?phone=%2B6285691801623&text&type=phone_number&app_absent=0" ><button class="bicon"><img src="https://cdn1.iconfinder.com/data/icons/apps-8/64/whatsapp-wa-apps-platform-512.png" class="icon"></button></a>
+        <a href="" ><button class="bicon"><img src="https://cdn1.iconfinder.com/data/icons/apps-8/64/instagram-ig-apps-platform-128.png" class="icon"></button></a>
+        <a href="mailto:starsandwich01@gmail.com" ><button class="bicon"><img src="https://cdn0.iconfinder.com/data/icons/social-media-and-logos-11/32/Gmail_envelope_letter_email_Gmail_envelope_letter_email-128.png" class="icon"></button></a>
+      <a href="https://maps.app.goo.gl/826VmNZYtxRTP6Ui9" target="_blank">
+    <button class="bicon">
+        <img src="https://cdn1.iconfinder.com/data/icons/twitter-ui-colored/48/JD-22-128.png" class="icon">
+    </button>
+</a>
+    
+    </div>
+    <div class="alamat" id="address">
+        <h4>ADDRESS</h4>
+        <h6>Dekat Toko Gorden Tati Jaya, deket Klinik Aqma sebrang toko playstation, Jl. Raya Cikampek-Parakan, Cikampek Kota, Kec. Cikampek, Karawang, Jawa Barat 41373</h6>
+    </div>
+    <div class="x x2">
+    <a href="#" class="up"><span class="material-symbols-outlined">
+arrow_warm_up
+</span></a>
+</div>
+        </div>
+</body>
+                                                                                       </html>
